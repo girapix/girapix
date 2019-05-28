@@ -1,0 +1,54 @@
+@import './../atoms/botao';
+
+.banner {
+    min-height: 100vh;
+    height: 100vh;
+    background: {
+        image: url('./../images/site/bg-azul.jpg');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+    .container {
+        @include vertical-center();
+        margin-bottom: 0;
+        .banner-content {
+            padding: 40px 0 20px;
+            .banner-textos {
+                color: $branco;
+                margin-bottom: 4vh;
+                @include mq('tablet') {
+                    padding-right: 33%;
+                }
+                @include mq('tablet-wide') {
+                    padding-right: 0;
+                }
+                @include mq('desktop') {
+                    margin-bottom: 6vh;
+                }
+                h1 {
+                    color: $amarelo;
+                    @include font-size(30px);
+                    font-weight: $bold;
+                    margin: 1vh 0 2vh;
+                    @include mq('desktop') {
+                        margin: 2vh 0 4vh;
+                        @include font-size(55px);
+                    }
+                }
+                h2 {
+                    @include font-size(20px);
+                    @include mq('desktop') {
+                        @include font-size(30px);
+                    }
+                }
+                p {
+                    @include font-size(16px);
+                    @include mq('desktop') {
+                        @include font-size(20px);
+                    }
+                }
+            }
+        }
+    }
+}

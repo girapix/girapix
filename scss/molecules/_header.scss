@@ -1,0 +1,18 @@
+@import './../atoms/logo';
+
+.navbar-fixed {
+    height: 80px;
+    position: absolute;
+    .navbar {
+        background-color: transparent;
+        height: 80px;
+        line-height: 80px;
+        @include transition(.3s);
+        .nav-wrapper {
+            .sidenav-trigger {
+                @include font-size(35px);
+                padding-top: 5px;
+            }
+        }
+    }
+}
