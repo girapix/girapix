@@ -1,0 +1,36 @@
+@import './../molecules/motivacional';
+@import './../molecules/equipe';
+
+.move {
+    height: 100%;
+    padding: 40px 0;
+    background: {
+        image: url('./../images/site/padronagem.png');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+    .container {
+        margin-bottom: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .move-girapix {
+            img {
+                width: 100%;
+            }
+        }
+        .move-texto {
+            h1 {
+                @include font-size(30px);
+                color: $amarelo;
+                margin-bottom: 40px;
+            }
+            p {
+                color: $cinza;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

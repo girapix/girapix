@@ -3,12 +3,6 @@
 .banner {
     min-height: 100vh;
     height: 100vh;
-    background: {
-        image: url('./../images/site/bg-azul.jpg');
-        size: cover;
-        position: bottom center;
-        repeat: no-repeat;
-    }
     .container {
         @include vertical-center();
         margin-bottom: 0;
@@ -37,6 +31,7 @@
                     }
                 }
                 h2 {
+                    font-family: 'Khand', sans-serif;
                     @include font-size(20px);
                     @include mq('desktop') {
                         @include font-size(30px);

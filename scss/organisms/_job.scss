@@ -1,0 +1,119 @@
+.dados {
+    .container {
+        .dados-projeto {
+            color: $roxo;
+            @include font-size(20px);
+        }
+    }
+}
+.job {
+    padding: 80px 0 40px;
+    .container {
+        .resumoinicial {
+            margin-bottom: 80px;
+            .foto-inicial {
+                @include mq('desktop') {
+                    height: calc(100vh / 2 + 100px);
+                    overflow: hidden;
+                }
+            }
+            .dados-inicio {
+                background-color: $roxo;
+                padding: 20px 10px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                position: relative;
+                @include mq('desktop') {
+                    padding: 40px;
+                    margin-top: -7em;
+                }
+                .texto {
+                    margin: 0;
+                    color: $branco;
+                    text-align: justify;
+                }
+                .dados {
+                    margin-top: 40px;
+                    @include mq('desktop') {
+                        border-left: 2px solid $dourado;
+                        padding-left: 30px;
+                        margin-left: 30px;
+                        margin-top: 0;
+                    }
+                    h1 {
+                        color: $amarelo;
+                        @include font-size(25px);
+                        font-weight: bold;
+                    }
+                    h2 {
+                        color: $amarelo;
+                        margin: 10px 0;
+                    }
+                    p {
+                        color: $branco;
+                    }
+                }
+            }
+        }
+        .job-highlights {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 40px 0;
+            &:nth-last-child(1) {
+                flex-wrap: wrap-reverse;
+            }
+            .highlights-img {
+                margin: 0;
+            }
+            .highlights-texto {
+                margin: 0;
+                h1 {
+                    @include font-size(30px);
+                    color: $amarelo;
+                    margin: 20px 0;
+                    span {
+                        @include font-size(55px);
+                    }
+                }
+                p {
+                    color: $cinza;
+                }
+            }
+        }
+        .job-gallery {
+            .img-principal {
+                @include mq('desktop') {
+                    height: calc(100vh / 2 + 100px);
+                    overflow: hidden;
+                }
+                margin-bottom: 20px;
+            }
+        }
+        .btn-job {
+            margin: 40px;
+        }
+        .job-relacionados {
+            .relacionados-area {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                .relacionados-post {
+                    .blue {
+                        background-color: $roxo !important;
+                    }
+                    .card-content {
+                        text-align: center;
+                        color: $roxo;
+                        span {
+                            font-weight: $bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

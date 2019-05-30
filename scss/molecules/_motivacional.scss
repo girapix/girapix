@@ -1,0 +1,28 @@
+.motivacional {
+    padding: 40px 0;
+    background-color: $roxo;
+    .container {
+        margin-bottom: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        .motivacional-texto {
+            color: $branco;
+            @include font-size(20px);
+        }
+        .motivacional-frase {
+            margin-top: 40px;
+            @include mq('desktop') {
+                margin-top: 0;
+            }
+            h1 {
+                color: $amarelo;
+                @include font-size(45px);
+            }
+            p {
+                color: $branco;
+                text-align: right;
+            }
+        }
+    }
+}

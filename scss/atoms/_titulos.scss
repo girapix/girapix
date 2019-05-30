@@ -1,0 +1,39 @@
+.titulos {
+    .headline {
+        @include font-size(40px);
+        font-weight: $bold;
+        padding: 2vh 0;
+        @include mq('tablet-wide') {
+            @include font-size(30px);
+        }
+    }
+    .subheadline {
+        padding: 2vh 5%;
+        @include font-size(25px);
+        @include mq('tablet-wide') {
+            padding: 2vh 0;
+            @include font-size(20px);
+        }
+    }
+    h1 {
+        @include font-size(30px);
+        text-align: center;
+        font-weight: $bold;
+    }
+    .amarelo {
+        color: $amarelo;
+    }
+    .branco {
+        color: $branco;
+    }
+    .azul {
+        color: $azul;
+    }
+    .roxo {
+        color: $roxo;
+    }
+    .cinza {
+        color: $cinza;
+    }
+
+}

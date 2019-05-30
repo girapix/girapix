@@ -1,0 +1,87 @@
+.portfolio {
+    padding-top: 40px;
+    background: {
+        image: url('./../images/site/padronagem.png');
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+    }
+    .container {
+        
+    }
+    .portfolio-content {
+        margin-top: 40px;
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .portfolio-item {
+            width: 100%;
+            // height: calc(100vh / 2);
+            background-color: $branco;
+            overflow: hidden;
+            @include mq('tablet') {
+                width: calc(100% / 2);
+            }
+            @include mq('desktop') {
+                width: calc(100% / 3);
+            }
+            figure {
+                position: relative;
+                background-color: $branco;
+                &:hover {
+                    a {
+                        @include opacity(1);
+                    }
+                    .overlay {
+                        top: 0;
+                    }
+                }
+                img {
+                    width: 100%;
+                    height: 100%;
+                    margin-bottom: -5px;
+                }
+                figcaption {
+                    a {
+                        text-align: center;
+                        position: absolute;
+                        z-index: 2;
+                        color: $branco;
+                        width: 100%;
+                        bottom: 10%;
+                        @include opacity(0);
+                        h3 {
+                            @include font-size(22px);
+                            font-weight: $bold;
+                            margin: 0;
+                        }
+                        p {
+                            @include font-size(18px);
+                            padding-top: 1vh;
+                        }
+                        span {
+                            background-color: $amarelo !important;
+                            margin-bottom: 1vh;
+                        }
+                    }
+                    a,
+                    .overlay {
+                        @include transition(.3s);
+                    }
+                    .overlay {
+                        @include gradient(180deg, $azul, $roxo);
+                        @include opacity(.8);
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        z-index: 1;
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

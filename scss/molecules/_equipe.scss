@@ -1,0 +1,27 @@
+.equipe {
+    padding: 40px 0;
+    .container {
+        margin-bottom: 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .equipe-membro {
+            margin: 20px;
+            .membro-img {
+                width: 150px;
+                @include push--auto;
+                img {
+                    width: 100%;
+                }
+            }
+            h1 {
+                @include font-size(25px);
+                font-weight: $bold;
+            }
+            h2 {
+                @include font-size(20px);
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

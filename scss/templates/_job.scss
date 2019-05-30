@@ -1,0 +1,41 @@
+@import './../organisms/job';
+
+.page-container {
+    min-height: 100vh;
+    position: relative;
+    .page-wrap {
+        padding-bottom: 75px;
+    }
+}
+
+.nav-color {
+    background-color: rgba($roxo, .9) !important;
+}
+
+.banner {
+    background: {
+        image: url('./../images/site/bg-job.jpg');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+    @include mq('desktop-ultra') {
+        background-image: url('./../images/site/bg-job.jpg');
+    }
+}
+
+.btn-principal {
+    background-color: $azul;
+    color: $branco;
+    &:hover {
+        background-color: darken($azul, 5%);
+    }
+}
+
+.contato {
+    background-color: $roxo;
+}
+
+footer {
+    background-color: $roxo;
+}

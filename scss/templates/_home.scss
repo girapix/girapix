@@ -1,0 +1,42 @@
+@import './../organisms/resumo';
+@import './../organisms/servicos';
+@import './../organisms/portfolio';
+@import './../organisms/depoimentos';
+@import './../organisms/blog';
+
+.page-container {
+    min-height: 100vh;
+    position: relative;
+    .page-wrap {
+        padding-bottom: 75px;
+    }
+}
+
+.nav-color {
+    background-color: rgba($azul, .9) !important;
+}
+
+.banner {
+    background: {
+        image: url('./../images/site/bg-azul.jpg');
+        size: cover;
+        position: bottom center;
+        repeat: no-repeat;
+    }
+}
+
+.btn-principal {
+    background-color: $roxo;
+    color: $branco;
+    &:hover {
+        background-color: darken($roxo, 10%);
+    }
+}
+
+.contato {
+    background-color: $azul;
+}
+
+footer {
+    background-color: $azul;
+}

@@ -1,0 +1,35 @@
+.blog {
+    height: 100%;
+    background: {
+        image: url('./../images/site/padronagem.png');
+        size: cover;
+        repeat: no-repeat;
+        position: bottom center;
+    }
+    .container {
+        margin-bottom: 0;
+        padding: 40px 0;
+        .postagens {
+            .blog-post {
+                padding-top: 40px;
+                .card-image {
+                    .red {
+                        background-color: $roxo !important;
+                    }
+                }
+                .card-content {
+                    span {
+                        color: $azul;
+                        margin: 0;
+                    }
+                    .card-title {
+                        font-weight: $bold;
+                    }
+                    p {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.depoimentos {
+    background: {
+        image: url('./../images/site/bg-depoimentos.jpg');
+        size: cover;
+        repeat: no-repeat;
+        position: right bottom;
+    }
+    height: 100%;
+    .container {
+        padding: 40px 0;
+        .depoimentos-area {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            .depoimento-foto {
+                margin: 0;
+                img {
+                    width: 100%;
+                }
+            }
+            .depoimentos-texto {
+                color: $branco;
+                padding-top: 40px;
+                p {
+                    @include font-size(25px);
+                    .aspas {
+                        color: $amarelo;
+                        font-weight: $bold;
+                        @include font-size(35px);
+                    }
+                }
+                .assinatura-cliente {
+                    @include font-size(15px);
+                    float: right;
+                    color: $amarelo;
+                }
+            }
+        }
+    }
+}

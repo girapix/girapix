@@ -1,0 +1,45 @@
+@import './../atoms/titulos';
+@import './../atoms/botao';
+
+.servicos {
+    padding: 40px;
+    background-color: $azul;
+    height: 100%;
+    .container {
+        margin-bottom: 0;
+        .servicos-content {
+            margin-bottom: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .servicos-item {
+                .item-img {
+                    height: 150px;
+                    width: 50%;
+                    position: relative;
+                    @include push--auto;
+                    @include mq('dektop') {
+                        width: 75%;
+                    }
+                    img {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        
+                    }
+                    .design {
+                        margin-bottom: -5px;
+                    }
+                }
+                p {
+                    color: $branco;
+                    @include font-size(20px);
+                    @include mq('dektop') {
+                        @include font-size(30px);
+                    }
+                }
+            }
+        }
+    }
+}
