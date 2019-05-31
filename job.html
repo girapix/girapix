@@ -14,7 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!-- Estilos -->
     <link rel="stylesheet" href="css/geral.css">
-    <link rel="stylesheet" href="css/job.css">    
+    <link rel="stylesheet" href="css/job.css">
+    <!-- Animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 <div class="page-container">
@@ -24,7 +27,7 @@
             <!-- Menu smart -->
             <!-- Menu desktop -->
             <div class="navbar-fixed">
-                <nav class="navbar z-depth-0">
+                <nav class="navbar z-depth-0" data-aos="fade-down">
                     <div class="nav-wrapper container">
                         <a href="index.html" class="brand-logo left"><img src="./images/site/girapix.png" alt="Girapix | Comunicação Digital"></a>
                         <a href="#" data-target="slide-out" class="sidenav-trigger right"><span class="iconify" data-icon="feather:align-center" data-inline="false"></span></a>
@@ -49,7 +52,7 @@
         <!-- inicio do corpo do site -->
         <section class="banner scrollspy" id="home">
             <div class="row container">
-                <div class="col s12 l8 banner-content">
+                <div class="col s12 l8 banner-content" data-aos="fade-right">
                     <div class="banner-textos left">
                         <h2>Girapix | Comunicação Digital</h2>
                         <h1>My Life Fotografias</h1>
@@ -62,7 +65,7 @@
         <!-- job -->
         <section class="job" id="job">
             <div class="row container">
-                <div class="resumoinicial col s12">
+                <div class="resumoinicial col s12" data-aos="fade-down">
                     <div class="foto-inicial">
                         <img src="./images/site/portfolio-1.jpg" alt="">
                     </div>
@@ -89,37 +92,37 @@
                         </div>
                     </div>
                 </div>
-                <div class="job-highlights col s12">
+                <div class="job-highlights col s12" data-aos="fade-left">
                     <div class="col s12 l5 highlights-img">
-                        <img src="./images/site/portfolio-1.jpg" alt="Foto do portfólio">
+                        <img class="materialboxed" src="./images/site/portfolio-1.jpg" alt="Foto do portfólio">
                     </div>
                     <div class="col s12 l5 highlights-texto">
                         <h1><span>1</span> - Resumo do Projeto</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam autem eaque facere vitae quo tempore, quia voluptatibus sed accusamus doloribus soluta est illum inventore nostrum officiis dicta incidunt qui nobis voluptas totam esse eveniet. Ab voluptatum eius ipsam iusto minima repellat natus obcaecati dolore nesciunt, nulla aspernatur, assumenda in a inventore minus. Id laboriosam asperiores incidunt ad excepturi explicabo quia, hic eligendi rerum tenetur aut debitis sint veritatis, temporibus, aperiam vero. Molestias ullam vel eum recusandae error consequuntur, tempora vitae deserunt voluptas eveniet? Sunt ratione accusamus, cupiditate adipisci rem, beatae aspernatur, aliquid voluptates tempora voluptatibus eius eaque dicta. Impedit, hic!</p>
                     </div>
                 </div>
-                <div class="job-highlights col s12">
+                <div class="job-highlights col s12" data-aos="fade-right">
                     <div class="col s12 l5 highlights-texto">
                         <h1><span>2</span> - O que fizemos</h1>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam autem eaque facere vitae quo tempore, quia voluptatibus sed accusamus doloribus soluta est illum inventore nostrum officiis dicta incidunt qui nobis voluptas totam esse eveniet. Ab voluptatum eius ipsam iusto minima repellat natus obcaecati dolore nesciunt, nulla aspernatur, assumenda in a inventore minus. Id laboriosam asperiores incidunt ad excepturi explicabo quia, hic eligendi rerum tenetur aut debitis sint veritatis, temporibus, aperiam vero. Molestias ullam vel eum recusandae error consequuntur, tempora vitae deserunt voluptas eveniet? Sunt ratione accusamus, cupiditate adipisci rem, beatae aspernatur, aliquid voluptates tempora voluptatibus eius eaque dicta. Impedit, hic!</p>
                     </div>
                     <div class="col s12 l5 highlights-img">
-                        <img src="./images/site/portfolio-1.jpg" alt="Foto do portfólio">
+                        <img class="materialboxed" src="./images/site/portfolio-1.jpg" alt="Foto do portfólio">
                     </div>
                 </div>
                 <div class="job-gallery col s12">
-                    <div class="col s12 img-principal">
-                        <a href="#"><img src="./images/site/portfolio-1.jpg" alt=""></a>
+                    <div class="col s12 img-principal" data-aos="fade-up">
+                        <img class="materialboxed" src="./images/site/portfolio-1.jpg" alt="">
                     </div>
-                    <div class="col s12 l6">
-                        <a href="#"><img src="./images/site/portfolio-1.jpg" alt=""></a>
+                    <div class="col s12 l6" data-aos="fade-right">
+                        <img class="materialboxed" src="./images/site/portfolio-1.jpg" alt="">
                     </div>
-                    <div class="col s12 l6">
-                        <a href="#"><img src="./images/site/portfolio-1.jpg" alt=""></a>
+                    <div class="col s12 l6" data-aos="fade-left">
+                        <img class="materialboxed" src="./images/site/portfolio-1.jpg" alt="">
                     </div>
                 </div>
                 <div class="job-visita center">
-                    <a href="#contato" class="waves-effect waves-light btn-large btn-principal btn-job">visitar site</a>
+                    <a href="#contato" class="waves-effect waves-light btn-large btn-principal btn-job btn-anim">visitar site</a>
                 </div>
                 <div class="job-relacionados">
                     <div class="titulos">
@@ -256,6 +259,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Animações -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./js/anim.js"></script>
 </body>
 </html>
