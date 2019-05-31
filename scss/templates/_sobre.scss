@@ -28,7 +28,11 @@
     background-color: $azul;
     color: $branco;
     &:hover {
-        background-color: darken($azul, 5%);
+        background-color: darken($azul, 10%);
+    }
+    &:visited, &:focus {
+        background-color: $azul;
+        color: $branco;
     }
 }
 
